@@ -7,7 +7,7 @@ pub struct Output<W: Write> {
 }
 
 impl<W: Write> Output<W> {
-    pub fn new(inner: W) -> Output {
+    pub fn new(inner: W) -> Output<W> {
         Output { inner: inner }
     }
 

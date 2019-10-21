@@ -1,4 +1,6 @@
-use std::io::{self, Write};
+use std::io;
+use std::io::Write;
+
 
 pub struct Output<W: Write> {
     inner: W,
